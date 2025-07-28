@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&display=swap");
+
+:root {
+  --bg-color: hsl(219 68.5% 6%);
+  --background-color-1: hsl(219 45.5% 18%);
+  --background-color-2: hsl(211 41.4% 35%);
+  --button-color-1: hsl(220 33.7% 34%);
+  --button-color-2: hsl(29 59% 52%);
+  --heading-color: hsl(33 70.9% 55%);
+
+  --text-color: hsl(120 5.9% 85%);
+  --btn-text-color: hsl(120 5.9% 78%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+h2 {
+  font-family: "Permanent Marker", sans-serif;
+  color: var(--heading-color);
+}

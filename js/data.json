@@ -1,0 +1,157 @@
+[
+  {
+    "category": "Heroes",
+    "survey": [
+      {
+        "question": "Which hero is known for the ultimate skill 'Feathered Air Strike'?",
+        "answers": ["Pharsa", "Layla", "Gusion", "Zilong"],
+        "correct": "Pharsa"
+      },
+      {
+        "question": "Which role does Tigreal primarily play?",
+        "answers": ["Tank", "Mage", "Marksman", "Support"],
+        "correct": "Tank"
+      },
+      {
+        "question": "Which hero is a known assassin with swords?",
+        "answers": ["Saber", "Grock", "Miya", "Estes"],
+        "correct": "Saber"
+      },
+      {
+        "question": "Who is known as the 'Blade Dancer'?",
+        "answers": ["Lancelot", "Benedetta", "Ling", "Fanny"],
+        "correct": "Benedetta"
+      },
+      {
+        "question": "Which hero has the passive 'Electro Flash'?",
+        "answers": ["Lesley", "Kimmy", "Wanwan", "Claude"],
+        "correct": "Kimmy"
+      }
+    ]
+  },
+  {
+    "category": "Items",
+    "survey": [
+      {
+        "question": "What item grants spell vamp?",
+        "answers": [
+          "Concentrated Energy",
+          "Endless Battle",
+          "War Axe",
+          "Windtalker"
+        ],
+        "correct": "Concentrated Energy"
+      },
+      {
+        "question": "Which item provides lifesteal for physical damage?",
+        "answers": [
+          "Haas's Claws",
+          "Blood Wings",
+          "Clock of Destiny",
+          "Winter Truncheon"
+        ],
+        "correct": "Haas's Claws"
+      },
+      {
+        "question": "What is the effect of 'Athena's Shield'?",
+        "answers": [
+          "Magic Defense Shield",
+          "Physical Attack",
+          "Movement Speed",
+          "Cooldown Reduction"
+        ],
+        "correct": "Magic Defense Shield"
+      },
+      {
+        "question": "Which item is used to counter healing?",
+        "answers": [
+          "Sea Halberd",
+          "Brute Force",
+          "Cursed Helmet",
+          "Rose Gold Meteor"
+        ],
+        "correct": "Sea Halberd"
+      },
+      {
+        "question": "Which of these is a jungle item?",
+        "answers": [
+          "Flame Retribution",
+          "Arcane Boots",
+          "Immortality",
+          "Thunder Belt"
+        ],
+        "correct": "Flame Retribution"
+      }
+    ]
+  },
+  {
+    "category": "Lore",
+    "survey": [
+      {
+        "question": "Who is the brother of Dyrroth?",
+        "answers": ["Silvanna", "Alucard", "Leomord", "Zilong"],
+        "correct": "Silvanna"
+      },
+      {
+        "question": "What empire does Tigreal belong to?",
+        "answers": [
+          "Moniyan Empire",
+          "Abyssal Empire",
+          "Celestial Realm",
+          "Eruditio"
+        ],
+        "correct": "Moniyan Empire"
+      },
+      {
+        "question": "Which hero is from the Celestial Palace?",
+        "answers": ["Lunox", "Argus", "Yin", "Zilong"],
+        "correct": "Zilong"
+      },
+      {
+        "question": "Who betrayed the Moniyan Empire?",
+        "answers": ["Dyrroth", "Gusion", "Freya", "Moskov"],
+        "correct": "Dyrroth"
+      },
+      {
+        "question": "Which hero was a former prince turned demon?",
+        "answers": ["Dyrroth", "Alucard", "Valir", "Aamon"],
+        "correct": "Dyrroth"
+      }
+    ]
+  },
+  {
+    "category": "Game Knowledge",
+    "survey": [
+      {
+        "question": "How many turrets are there in each lane?",
+        "answers": ["3", "4", "2", "5"],
+        "correct": "3"
+      },
+      {
+        "question": "What is the respawn time of Lord?",
+        "answers": ["8 mins", "6 mins", "7 mins", "9 mins"],
+        "correct": "8 mins"
+      },
+      {
+        "question": "Which jungle monster gives purple buff?",
+        "answers": ["Serpent", "Lithowanderer", "Crab", "Turtle"],
+        "correct": "Serpent"
+      },
+      {
+        "question": "What does Retribution do?",
+        "answers": [
+          "Deals true damage to monsters",
+          "Slows enemies",
+          "Restores HP",
+          "Increases gold"
+        ],
+        "correct": "Deals true damage to monsters"
+      },
+      {
+        "question": "What is the maximum level in the game?",
+        "answers": ["15", "18", "12", "20"],
+        "correct": "15"
+      }
+    ]
+  }
+]
