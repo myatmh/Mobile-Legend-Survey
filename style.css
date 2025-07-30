@@ -40,13 +40,13 @@ body {
 /* ******************** Mix Style ****************** */
 
 .initial_container {
-  display: block;
+  display: none;
 }
 .play_container {
   display: none;
 }
 .score_container {
-  display: none; /*info change to flex */
+  display: flex; /*info change to flex */
 }
 
 .initial_container,
@@ -102,7 +102,8 @@ body {
 .choice1,
 .choice2 {
   text-align: center;
-  color: var(--heading-color);
+  font-family: "Oswald", "Inter", sans-serif;
+  font-size: 1.3rem;
   margin: 1rem 0 2rem;
 }
 .choice1 {
@@ -183,16 +184,23 @@ body {
 
 .track_questions {
   display: flex;
+  font-family: "Oswald", "Inter", sans-serif;
   gap: 0.5rem;
 }
 
 .current_question {
   margin-right: 0.5rem;
+  font-family: "Oswald", sans-serif;
 }
 
 .current_question span {
   font-size: 1.2rem;
   color: var(--span-color);
+}
+
+.kagu {
+  border: 1px solid var(--background-color-1);
+  border-radius: 8px;
 }
 
 .question_container {
@@ -214,12 +222,13 @@ body {
 
 .time {
   text-align: center;
-  margin: 2rem;
+  margin: 1rem;
   line-height: 1.5rem;
 }
 
 .time span {
   color: var(--span-color);
+  font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
 }
 /* ******************** end question container ****************** */
