@@ -19,6 +19,39 @@
 
     <!-- ********************* Start Initial Container ********************** -->
     <div class="initial_container">
+      <h4 class="choice1">
+        Choose a category and numbers of questions how many you wanna play
+      </h4>
+      <h4 class="choice2">Choose category and Quantity</h4>
+
+      <hr class="devider" />
+
+      <h3 class="cat_h3">Category</h3>
+      <div class="category_container">
+        <div class="category">Heroes</div>
+        <div class="category">Items</div>
+        <div class="category">Lore</div>
+        <div class="category">Game Knowledge</div>
+      </div>
+
+      <hr class="devider1" />
+
+      <h3 class="quantity_h3">Question Quantity</h3>
+      <div class="number_choice_container">
+        <div class="quantity">5</div>
+        <div class="quantity">10</div>
+        <div class="quantity">15</div>
+        <div class="quantity">20</div>
+      </div>
+
+      <div class="start_container">
+        <button class="start_btn">Play</button>
+      </div>
+    </div>
+    <!-- ********************* End Initial Container ********************** -->
+
+    <!-- ********************* Start Question Container ********************** -->
+    <div class="play_container">
       <div class="track_container">
         <div class="track_questions">
           <div>t</div>
@@ -50,12 +83,22 @@
         Automatically proceeding to next question in <span>10</span> sec
       </div>
     </div>
-    <!-- ********************* End Initial Container ********************** -->
-
-    <!-- ********************* Start Question Container ********************** -->
     <!-- ********************* End Question Container ********************** -->
 
     <!-- ********************* Start Score Container ********************** -->
+    <div class="score_container">
+      <img src="assets/question.png" alt="congrat image" />
+      <h1>Congratulations</h1>
+      <div class="score">
+        <div class="score_text">You Score :</div>
+        <div class="point">10</div>
+        <p class="quest">of <span>10</span> questions</p>
+      </div>
+      <div class="btn_container">
+        <button class="save_score_btn">Save Score</button>
+        <button class="restart_btn">Restart</button>
+      </div>
+    </div>
     <!-- ********************* End Score Container ********************** -->
     <script src="js/script.js"></script>
   </body>
