@@ -40,13 +40,13 @@ body {
 /* ******************** Mix Style ****************** */
 
 .initial_container {
-  display: none;
+  display: block;
 }
 .play_container {
   display: none;
 }
 .score_container {
-  display: flex; /*info change to flex */
+  display: none; /*info change to flex */
 }
 
 .initial_container,
