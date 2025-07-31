@@ -9,12 +9,12 @@
       },
       {
         "question": "Which role does Tigreal primarily play?",
-        "answers": ["Tank", "Mage", "Marksman", "Support"],
+        "answers": ["Mage", "Marksman", "Support", "Tank"],
         "correct": "Tank"
       },
       {
         "question": "Which hero is a known assassin with swords?",
-        "answers": ["Saber", "Grock", "Miya", "Estes"],
+        "answers": ["Grock", "Miya", "Saber", "Estes"],
         "correct": "Saber"
       },
       {
@@ -26,6 +26,36 @@
         "question": "Which hero has the passive 'Electro Flash'?",
         "answers": ["Lesley", "Kimmy", "Wanwan", "Claude"],
         "correct": "Kimmy"
+      },
+      {
+        "question": "Who is the 'Beast King' in Mobile Legends?",
+        "answers": ["Tigreal", "Grock", "Leomord", "Ruby"],
+        "correct": "Leomord"
+      },
+      {
+        "question": "What is the passive ability of the hero 'Clint'?",
+        "answers": ["Rage", "Bloodthirst", "Quickdraw", "Sniper"],
+        "correct": "Sniper"
+      },
+      {
+        "question": "What is the ultimate skill of Alucard in Mobile Legends?",
+        "answers": [
+          "Demolition Force",
+          "Fission Strike",
+          "Vampiric Fury",
+          "Sword Spike"
+        ],
+        "correct": "Fission Strike"
+      },
+      {
+        "question": "Who has the ability 'Fist of the North Star'?",
+        "answers": ["Masha", "Aldous", "Chou", "Zilong"],
+        "correct": "Chou"
+      },
+      {
+        "question": "What type of hero is Alice in Mobile Legends?",
+        "answers": ["Mage", "Support", "Tank", "Marksman"],
+        "correct": "Support"
       }
     ]
   },
@@ -35,8 +65,8 @@
       {
         "question": "What item grants spell vamp?",
         "answers": [
-          "Concentrated Energy",
           "Endless Battle",
+          "Concentrated Energy",
           "War Axe",
           "Windtalker"
         ],
@@ -55,18 +85,18 @@
       {
         "question": "What is the effect of 'Athena's Shield'?",
         "answers": [
-          "Magic Defense Shield",
           "Physical Attack",
           "Movement Speed",
-          "Cooldown Reduction"
+          "Cooldown Reduction",
+          "Magic Defense Shield"
         ],
         "correct": "Magic Defense Shield"
       },
       {
         "question": "Which item is used to counter healing?",
         "answers": [
-          "Sea Halberd",
           "Brute Force",
+          "Sea Halberd",
           "Cursed Helmet",
           "Rose Gold Meteor"
         ],
@@ -75,12 +105,62 @@
       {
         "question": "Which of these is a jungle item?",
         "answers": [
-          "Flame Retribution",
           "Arcane Boots",
           "Immortality",
+          "Flame Retribution",
           "Thunder Belt"
         ],
         "correct": "Flame Retribution"
+      },
+      {
+        "question": "Which item increases magic penetration?",
+        "answers": [
+          "Blade of Despair",
+          "Oracle",
+          "Ice Queen Wand",
+          "Divine Glalve"
+        ],
+        "correct": "Divine Glalve"
+      },
+      {
+        "question": "What item grants high physical burst damage?",
+        "answers": [
+          "Endless Battle",
+          "Blade of Despair",
+          "War Axe",
+          "Hunter Strike"
+        ],
+        "correct": "Blade of Despair"
+      },
+      {
+        "question": "Which item provides cooldown reduction and HP regen?",
+        "answers": [
+          "Clock of Destiny",
+          "Dominance Ice",
+          "Enchanted Talisman",
+          "Oracle"
+        ],
+        "correct": "Enchanted Talisman"
+      },
+      {
+        "question": "Which item gives a shield when HP drops below a threshold?",
+        "answers": [
+          "Rose Gold Meteor",
+          "Athena’s Shield",
+          "Antique Cuirass",
+          "Immortality"
+        ],
+        "correct": "Rose Gold Meteor"
+      },
+      {
+        "question": "Which item boosts movement speed and slows enemies?",
+        "answers": [
+          "Arcane Boots",
+          "Ice Queen Wand",
+          "Thunder Belt",
+          "Glowing Wand"
+        ],
+        "correct": "Ice Queen Wand"
       }
     ]
   },
@@ -95,9 +175,9 @@
       {
         "question": "What empire does Tigreal belong to?",
         "answers": [
-          "Moniyan Empire",
           "Abyssal Empire",
           "Celestial Realm",
+          "Moniyan Empire",
           "Eruditio"
         ],
         "correct": "Moniyan Empire"
@@ -109,13 +189,38 @@
       },
       {
         "question": "Who betrayed the Moniyan Empire?",
-        "answers": ["Dyrroth", "Gusion", "Freya", "Moskov"],
+        "answers": ["Gusion", "Freya", "Dyrroth", "Moskov"],
         "correct": "Dyrroth"
       },
       {
         "question": "Which hero was a former prince turned demon?",
         "answers": ["Dyrroth", "Alucard", "Valir", "Aamon"],
         "correct": "Dyrroth"
+      },
+      {
+        "question": "Which hero is the Queen of the Moon?",
+        "answers": ["Lunox", "Selena", "Estes", "Miya"],
+        "correct": "Miya"
+      },
+      {
+        "question": "What race does Khufra belong to?",
+        "answers": ["Undead", "Desert Tyrant", "Demon", "Elf"],
+        "correct": "Desert Tyrant"
+      },
+      {
+        "question": "Which hero is known as the “Dawn’s Light”?",
+        "answers": ["Tigreal", "Faramis", "Harith", "Lylia"],
+        "correct": "Tigreal"
+      },
+      {
+        "question": "Who is the twin sister of Selena?",
+        "answers": ["Lunox", "Alice", "Rafaela", "Karina"],
+        "correct": "Karina"
+      },
+      {
+        "question": "Which hero was once a royal guard of the Moniyan Empire?",
+        "answers": ["Tigreal", "Terizla", "Leomord", "Alucard"],
+        "correct": "Leomord"
       }
     ]
   },
@@ -129,28 +234,68 @@
       },
       {
         "question": "What is the respawn time of Lord?",
-        "answers": ["8 mins", "6 mins", "7 mins", "9 mins"],
+        "answers": ["6 mins", "7 mins", "8 mins", "9 mins"],
         "correct": "8 mins"
       },
       {
         "question": "Which jungle monster gives purple buff?",
-        "answers": ["Serpent", "Lithowanderer", "Crab", "Turtle"],
+        "answers": ["Lithowanderer", "Serpent", "Crab", "Turtle"],
         "correct": "Serpent"
       },
       {
         "question": "What does Retribution do?",
         "answers": [
-          "Deals true damage to monsters",
           "Slows enemies",
           "Restores HP",
-          "Increases gold"
+          "Increases gold",
+          "Deals true damage to monsters"
         ],
         "correct": "Deals true damage to monsters"
       },
       {
         "question": "What is the maximum level in the game?",
-        "answers": ["15", "18", "12", "20"],
+        "answers": ["18", "15", "12", "20"],
         "correct": "15"
+      },
+      {
+        "question": "Which role is responsible for securing objectives like Turtle and Lord?",
+        "answers": ["Jungler", "Tank", "Support", "Marksman"],
+        "correct": "Jungler"
+      },
+      {
+        "question": "What does the blue buff primarily provide?",
+        "answers": [
+          "HP regen",
+          "Movement speed",
+          "Physical attack",
+          "Mana regen and cooldown reduction"
+        ],
+        "correct": "Mana regen and cooldown reduction"
+      },
+      {
+        "question": "Which lane is typically played by the Marksman?",
+        "answers": ["Mid Lane", "Gold Lane", "EXP Lane", "Jungle"],
+        "correct": "Gold Lane"
+      },
+      {
+        "question": "What happens when the Lord is summoned?",
+        "answers": [
+          "Spawns in all lanes",
+          "Pushes the strongest lane",
+          "Attacks enemy base directly",
+          "Buffs allied heroes"
+        ],
+        "correct": "Pushes the strongest lane"
+      },
+      {
+        "question": "Which emblem is best suited for mages?",
+        "answers": [
+          "Assassin Emblem",
+          "Tank Emblem",
+          "Mage Emblem",
+          "Support Emblem"
+        ],
+        "correct": "Mage Emblem"
       }
     ]
   }
