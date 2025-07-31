@@ -72,8 +72,7 @@ body {
 }
 
 .quantity,
-.category,
-.answers {
+.category {
   background-color: var(--background-color-1);
   /* padding: 1rem; */
   display: inline-flex;
@@ -85,9 +84,14 @@ body {
   transition: all 0.3s ease;
 }
 
+.active {
+  color: var(--heading-color);
+  box-shadow: 1px 2px 4px var(--bg-color);
+}
+
 .quantity:hover,
 .category:hover,
-.answers:hover {
+.answers_wrapper:hover {
   color: var(--heading-color);
   box-shadow: 1px 2px 4px var(--bg-color);
 }
@@ -174,23 +178,32 @@ body {
 /* ********************end Initial container ****************** */
 
 /* ******************** start question container ****************** */
+.name_wrap {
+  display: flex;
+  justify-content: center;
+}
+.selected_category_name {
+  letter-spacing: 0.6px;
+  font-size: 1.4rem;
+  font-family: "Oswald", sans-serif;
+}
 
 .track_container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.5rem 0rem 1rem;
   margin-left: 0.5rem;
+  font-family: "Oswald", "Inter", sans-serif;
 }
 
 .track_questions {
   display: flex;
-  font-family: "Oswald", "Inter", sans-serif;
   gap: 0.5rem;
 }
 
 .current_question {
   margin-right: 0.5rem;
-  font-family: "Oswald", sans-serif;
 }
 
 .current_question span {
@@ -215,9 +228,22 @@ body {
   font-weight: 600;
 }
 
-.answers span {
+.answers_wrapper {
+  background-color: var(--background-color-1);
+  /* padding: 1rem; */
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.answers_wrapper span {
   background-color: var(--button-color-1);
-  padding: 1rem;
+  padding: 0.8rem 1.2rem;
+  font-family: "Oswald", "Inter", sans-serif;
+  font-weight: 500;
 }
 
 .time {
