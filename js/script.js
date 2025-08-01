@@ -92,6 +92,7 @@ const fetchData = async () => {
     //Reuseable Variables
     let currentQuestions = [];
     let currentQuestionIndex = 0;
+    let timeLeft = 15;
 
     // Render Function
     const renderQuestions = (userSelectedCategory, userSelectedQuantity) => {
@@ -120,14 +121,81 @@ const fetchData = async () => {
       console.log(currentQuestions);
 
       showQuestions(currentQuestions);
+
+      const timer = document.querySelector(".timer");
+
+      const timerId = setInterval(() => {
+        timeLeft--;
+        timer.innerHTML = `${timeLeft}`;
+        if (timeLeft === 0) {
+          clearInterval(timerId);
+          console.log("hello");
+        }
+        console.log(timeLeft);
+      }, 1000);
     };
 
     //Show question one by one
     const showQuestions = (cq) => {
-      let questionName = document.querySelector(".question_name");
+      const showTrackQuestionNumber =
+        document.querySelector(".current_question");
+      const questionName = document.querySelector(".question_name");
+      const answersContainer = document.querySelector(".answers_container");
+
       console.log(cq[currentQuestionIndex]);
-      questionName = cq[currentQuestionIndex].question;
-      console.log(questionName);
+      questionName.textContent = cq[currentQuestionIndex].question;
+
+      showTrackQuestionNumber.innerHTML = `Question: <span>${
+        currentQuestionIndex + 1
+      }</span>`;
+
+      //Render Answers
+      const answerArray = cq[currentQuestionIndex].answers;
+      const correctAnswer = cq[currentQuestionIndex].correct;
+
+      answerArray.forEach((ans, index) => {
+        const answerDiv = document.createElement("div");
+        answerDiv.classList.add("answers_wrapper");
+        answerDiv.disabled = true;
+        answerDiv.setAttribute("data-set", ans);
+
+        const spanDiv = document.createElement("span");
+        spanDiv.textContent = index + 1;
+
+        const answer = document.createElement("div");
+        answer.classList.add("answers");
+        answer.textContent = ans;
+
+        answerDiv.append(spanDiv, answer);
+
+        answersContainer.appendChild(answerDiv);
+      });
+      //get all answers div and styled selected answer
+      const allAnswerDiv = new Array(
+        ...document.querySelectorAll(".answers_wrapper")
+      );
+      // console.log(allAnswerDiv);
+      allAnswerDiv.forEach((all) => {
+        all.addEventListener("click", (e) => {
+          const correctData = e.target.getAttribute("data-set");
+          if (correctData === correctAnswer) {
+            console.log(true);
+            e.target.classList.add("answer_active");
+            allAnswerDiv.forEach((d) => {
+              d.classList.add("disabled");
+            });
+          } else {
+            console.log(false);
+            e.target.classList.add("wrong_active");
+            allAnswerDiv.forEach((d) => {
+              d.classList.add("disabled");
+              if (d.getAttribute("data-set") === correctAnswer) {
+                d.classList.add("compare_active");
+              }
+            });
+          }
+        });
+      });
     };
   } catch (error) {
     console.error("Error: ", error);

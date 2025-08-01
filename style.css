@@ -7,6 +7,9 @@
   --button-color-1: hsl(220 33.7% 34%);
   --button-color-2: hsl(29, 62%, 45%);
   --button-color-3: hsl(145, 56%, 30%);
+  --compare-color: hsl(158, 39%, 36%);
+  --active-color: hsl(138, 79%, 30%);
+  --false-color: hsl(340, 73%, 37%);
   --heading-color: hsl(33 70.9% 55%);
 
   --span-color: hsl(61, 100%, 68%);
@@ -240,10 +243,38 @@ body {
 }
 
 .answers_wrapper span {
+  font-family: "Oswald", "Inter", sans-serif;
   background-color: var(--button-color-1);
   padding: 0.8rem 1.2rem;
-  font-family: "Oswald", "Inter", sans-serif;
   font-weight: 500;
+}
+
+.answers {
+  font-weight: 500;
+}
+
+.answer_active {
+  background-color: var(--active-color);
+  box-shadow: 1px 2px 4px var(--background-color-1);
+}
+
+.compare_active {
+  background-color: var(--compare-color);
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.9;
+}
+.disabled:hover {
+  box-shadow: none;
+  color: var(--text-color);
+}
+
+.wrong_active {
+  background-color: var(--false-color);
+  box-shadow: 1px 2px 4px var(--background-color-1);
 }
 
 .time {
@@ -252,7 +283,7 @@ body {
   line-height: 1.5rem;
 }
 
-.time span {
+.timer {
   color: var(--span-color);
   font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
