@@ -111,7 +111,7 @@ const fetchData = async () => {
 
     const highestPoint = document.querySelector(".top");
 
-    const hPoint = Math.max(...scores);
+    const hPoint = scores && scores.length ? Math.max(...scores) : 0;
 
     highestPoint.textContent = hPoint;
 
@@ -190,7 +190,7 @@ const fetchData = async () => {
       const timer = document.querySelector(".timer");
 
       //reset timer
-      if (timerId) clearInterval(timerId);
+      if (timerId !== null) clearInterval(timerId);
       timeLeft = 15;
       timer.textContent = timeLeft;
 
@@ -273,7 +273,7 @@ const fetchData = async () => {
     });
 
     finalBtn.addEventListener("click", () => {
-      if (timerId) clearInterval(timerId);
+      if (timerId !== null) clearInterval(timerId);
       playContainer.classList.remove("tran");
       scoreContainer.classList.add("tran");
 
@@ -288,15 +288,28 @@ const fetchData = async () => {
 
     saveBtn.addEventListener("click", () => {
       saveBtn.classList.add("disabled");
-      if (!Array.isArray(scores)) {
-        scores = [];
-      }
+      // if (!Array.isArray(scores)) {
+      //   scores = [];
+      // }
+      scores = JSON.parse(localStorage.getItem("score")) || [];
       scores.push(score);
       localStorage.setItem("score", JSON.stringify(scores));
-      console.log(scores);
+      // console.log(scores);
     });
 
-    // restartBtn.addEventListener("click")
+    restartBtn.addEventListener("click", () => {
+      setTimeout(() => {
+        window.location.reload(() => {
+          selectedCategory = null;
+          selectedQuantity = null;
+          currentQuestionIndex = 0;
+          score = 0;
+
+          scoreContainer.style.display = "none";
+          initialContainer.style.display = "block";
+        });
+      }, 200);
+    });
   } catch (error) {
     console.error("Error: ", error);
   }
