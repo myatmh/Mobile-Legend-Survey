@@ -51,13 +51,7 @@
         <div class="selected_category_name"></div>
       </div>
       <div class="track_container">
-        <div class="track_questions">
-          <div>t</div>
-          <div>f</div>
-          <div>t</div>
-          <div>t</div>
-          <div>t</div>
-        </div>
+        <div class="track_questions"></div>
         <div class="current_question"></div>
       </div>
 
@@ -76,20 +70,27 @@
       <div class="answers_container"></div>
 
       <div class="time">
-        Automatically proceeding to next question in
-        <span class="timer">15</span> sec
+        <p>Time : <span class="timer">15</span> sec</p>
+        <button class="nextBtn">Next Question</button>
+        <button class="final">Final Score</button>
       </div>
     </div>
     <!-- ********************* End Question Container ********************** -->
 
     <!-- ********************* Start Score Container ********************** -->
     <div class="score_container">
-      <img src="assets/mvp.png" width="300px" alt="congrat image" />
-      <h1>Congratulations</h1>
+      <img
+        class="trophy"
+        src="assets/trophy.png"
+        width="300px"
+        height="350px"
+        alt="congrat image"
+      />
+      <h1>🏆 Congratulations 🏆</h1>
       <div class="score">
         <div class="score_text">You Score :</div>
         <div class="point">10</div>
-        <p class="quest">of <span>10</span> questions</p>
+        <p class="quest">of <span class="track_point">10</span> questions</p>
       </div>
       <div class="btn_container">
         <button class="save_score_btn">Save Score</button>

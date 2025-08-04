@@ -14,6 +14,7 @@ const fetchData = async () => {
     //Reuseable Variable
     const initialContainer = document.querySelector(".initial_container");
     const playContainer = document.querySelector(".play_container");
+    const scoreContainer = document.querySelector(".score_container");
     const categoryName = document.querySelector(".selected_category_name");
 
     let selectedCategory = null;
@@ -83,6 +84,7 @@ const fetchData = async () => {
       } else {
         initialContainer.style.display = "none";
         playContainer.style.display = "block";
+        playContainer.classList.add("tran");
 
         //call render Function
         renderQuestions(selectedCategory, selectedQuantity);
@@ -92,7 +94,15 @@ const fetchData = async () => {
     //Reuseable Variables
     let currentQuestions = [];
     let currentQuestionIndex = 0;
+    let score = 0;
     let timeLeft = 15;
+    let timerId = null;
+
+    const nextBtn = document.querySelector(".nextBtn");
+    const finalBtn = document.querySelector(".final");
+
+    const pointText = document.querySelector(".point");
+    const trackPoint = document.querySelector(".track_point");
 
     // Render Function
     const renderQuestions = (userSelectedCategory, userSelectedQuantity) => {
@@ -118,21 +128,9 @@ const fetchData = async () => {
         0,
         userSelectedQuantity
       );
-      console.log(currentQuestions);
+      // console.log(currentQuestions);
 
       showQuestions(currentQuestions);
-
-      const timer = document.querySelector(".timer");
-
-      const timerId = setInterval(() => {
-        timeLeft--;
-        timer.innerHTML = `${timeLeft}`;
-        if (timeLeft === 0) {
-          clearInterval(timerId);
-          console.log("hello");
-        }
-        console.log(timeLeft);
-      }, 1000);
     };
 
     //Show question one by one
@@ -142,12 +140,13 @@ const fetchData = async () => {
       const questionName = document.querySelector(".question_name");
       const answersContainer = document.querySelector(".answers_container");
 
-      console.log(cq[currentQuestionIndex]);
+      answersContainer.innerHTML = "";
+      // console.log(cq[currentQuestionIndex]);
       questionName.textContent = cq[currentQuestionIndex].question;
 
       showTrackQuestionNumber.innerHTML = `Question: <span>${
         currentQuestionIndex + 1
-      }</span>`;
+      } / ${currentQuestions.length}</span>`;
 
       //Render Answers
       const answerArray = cq[currentQuestionIndex].answers;
@@ -164,29 +163,83 @@ const fetchData = async () => {
 
         const answer = document.createElement("div");
         answer.classList.add("answers");
-        answer.textContent = ans;
+        answer.innerText = ans;
 
         answerDiv.append(spanDiv, answer);
 
         answersContainer.appendChild(answerDiv);
       });
+
       //get all answers div and styled selected answer
       const allAnswerDiv = new Array(
         ...document.querySelectorAll(".answers_wrapper")
       );
+
+      // startTime();
+      const timer = document.querySelector(".timer");
+
+      //reset timer
+      if (timerId) clearInterval(timerId);
+      timeLeft = 15;
+      timer.textContent = timeLeft;
+
+      timerId = setInterval(() => {
+        timeLeft--;
+        timer.textContent = timeLeft;
+        if (timeLeft === 0) {
+          // console.log("done");
+          clearInterval(timerId);
+          currentQuestionIndex++;
+          if (currentQuestionIndex === currentQuestions.length) {
+            finalBtn.style.display = "block";
+          } else {
+            setTimeout(() => {
+              showNextBtn();
+            }, 500);
+          }
+
+          allAnswerDiv.forEach((fail) => {
+            fail.classList.add("disabled");
+            if (fail.getAttribute("data-set") === correctAnswer) {
+              fail.classList.add("answer_active");
+            }
+          });
+          // console.log(currentQuestionIndex);
+        }
+      }, 1000);
+
+      const showNextBtn = () => {
+        nextBtn.classList.add("show-btn");
+      };
+
       // console.log(allAnswerDiv);
       allAnswerDiv.forEach((all) => {
         all.addEventListener("click", (e) => {
-          const correctData = e.target.getAttribute("data-set");
+          clearInterval(timerId);
+
+          if (currentQuestionIndex + 1 === currentQuestions.length) {
+            finalBtn.style.display = "block";
+          } else {
+            setTimeout(() => {
+              showNextBtn();
+            }, 500);
+          }
+
+          const correctData = e.currentTarget.getAttribute("data-set");
+          // console.log(correctData);
+
           if (correctData === correctAnswer) {
-            console.log(true);
-            e.target.classList.add("answer_active");
+            // console.log(true);
+            all.classList.add("answer_active");
+            score++;
+            currentQuestionIndex++;
             allAnswerDiv.forEach((d) => {
               d.classList.add("disabled");
             });
           } else {
-            console.log(false);
-            e.target.classList.add("wrong_active");
+            // console.log(false);
+            e.currentTarget.classList.add("wrong_active");
+            currentQuestionIndex++;
             allAnswerDiv.forEach((d) => {
               d.classList.add("disabled");
               if (d.getAttribute("data-set") === correctAnswer) {
@@ -194,9 +247,33 @@ const fetchData = async () => {
               }
             });
           }
+          // console.log(currentQuestionIndex);
         });
       });
     };
+
+    nextBtn.addEventListener("click", () => {
+      setTimeout(() => {
+        showQuestions(currentQuestions);
+        if (nextBtn.classList.contains("show-btn")) {
+          nextBtn.classList.remove("show-btn");
+        }
+      }, 500);
+    });
+
+    finalBtn.addEventListener("click", () => {
+      if (timerId) clearInterval(timerId);
+      playContainer.classList.remove("tran");
+      scoreContainer.classList.add("tran");
+
+      setTimeout(() => {
+        playContainer.style.display = "none";
+        scoreContainer.style.display = "flex";
+      }, 300);
+
+      pointText.textContent = score;
+      trackPoint.textContent = currentQuestions.length;
+    });
   } catch (error) {
     console.error("Error: ", error);
   }
