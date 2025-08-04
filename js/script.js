@@ -17,6 +17,9 @@ const fetchData = async () => {
     const scoreContainer = document.querySelector(".score_container");
     const categoryName = document.querySelector(".selected_category_name");
 
+    const saveBtn = document.querySelector(".save_score_btn");
+    const restartBtn = document.querySelector(".restart_btn");
+
     let selectedCategory = null;
     let selectedQuantity = null;
 
@@ -97,12 +100,20 @@ const fetchData = async () => {
     let score = 0;
     let timeLeft = 15;
     let timerId = null;
+    let scores = JSON.parse(localStorage.getItem("score"));
+    // console.log(typeof scores[1]);
 
     const nextBtn = document.querySelector(".nextBtn");
     const finalBtn = document.querySelector(".final");
 
     const pointText = document.querySelector(".point");
     const trackPoint = document.querySelector(".track_point");
+
+    const highestPoint = document.querySelector(".top");
+
+    const hPoint = Math.max(...scores);
+
+    highestPoint.textContent = hPoint;
 
     // Render Function
     const renderQuestions = (userSelectedCategory, userSelectedQuantity) => {
@@ -274,6 +285,18 @@ const fetchData = async () => {
       pointText.textContent = score;
       trackPoint.textContent = currentQuestions.length;
     });
+
+    saveBtn.addEventListener("click", () => {
+      saveBtn.classList.add("disabled");
+      if (!Array.isArray(scores)) {
+        scores = [];
+      }
+      scores.push(score);
+      localStorage.setItem("score", JSON.stringify(scores));
+      console.log(scores);
+    });
+
+    // restartBtn.addEventListener("click")
   } catch (error) {
     console.error("Error: ", error);
   }

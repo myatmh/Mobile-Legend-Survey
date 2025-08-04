@@ -56,6 +56,56 @@
         "question": "What type of hero is Alice in Mobile Legends?",
         "answers": ["Mage", "Support", "Tank", "Marksman"],
         "correct": "Support"
+      },
+      {
+        "question": "Which hero is known for the skill 'Tempest of Blades'?",
+        "answers": ["Lancelot", "Ling", "Hayabusa", "Fanny"],
+        "correct": "Ling"
+      },
+      {
+        "question": "Which hero has the ability 'Soul Eater'?",
+        "answers": ["Saber", "Leomord", "Alucard", "Zilong"],
+        "correct": "Alucard"
+      },
+      {
+        "question": "Which hero is known as the 'Dragon Tamer'?",
+        "answers": ["Kaja", "Ling", "Yu Zhong", "Zilong"],
+        "correct": "Zilong"
+      },
+      {
+        "question": "Which hero has the skill 'Divine Judgment'?",
+        "answers": ["Kaja", "Angela", "Estes", "Diggie"],
+        "correct": "Kaja"
+      },
+      {
+        "question": "Which hero is known for the skill 'Crossbow of Tang'?",
+        "answers": ["Lesley", "Wanwan", "Kimmy", "Claude"],
+        "correct": "Wanwan"
+      },
+      {
+        "question": "Which hero has the ability 'Inferno'?",
+        "answers": ["Baxia", "Khaleed", "Thamuz", "Yu Zhong"],
+        "correct": "Thamuz"
+      },
+      {
+        "question": "Which hero is known as the 'Queen of the North'?",
+        "answers": ["Lunox", "Slena", "Alice", "Aurora"],
+        "correct": "Aurora"
+      },
+      {
+        "question": "Which hero has the skill 'Black Hole'?",
+        "answers": ["Zhask", "Vale", "Gord", "Vexana"],
+        "correct": "Zhask"
+      },
+      {
+        "question": "Which hero is known for the skill 'Meteor Shower'?",
+        "answers": ["Aurora", "Chang'e", "Gord", "Lunox"],
+        "correct": "Chang'e"
+      },
+      {
+        "question": "Which hero has the ability 'Molten Scythes'?",
+        "answers": ["Baxia", "Yu Zhong", "Thamuz", "Khaleed"],
+        "correct": "Thamuz"
       }
     ]
   },
@@ -161,6 +211,106 @@
           "Glowing Wand"
         ],
         "correct": "Ice Queen Wand"
+      },
+      {
+        "question": "Which item provides bonus movement speed and attack speed?",
+        "answers": [
+          "Scarlet Phantom",
+          "Demon Hunter Sword",
+          "Windtalker",
+          "Blade of Despair"
+        ],
+        "correct": "Windtalker"
+      },
+      {
+        "question": "Which item grants bonus magic lifesteal?",
+        "answers": [
+          "Winter Truncheon",
+          "Blood Wings",
+          "Clock of Destiny",
+          "Concentrated Energy"
+        ],
+        "correct": "Concentrated Energy"
+      },
+      {
+        "question": "Which item increases physical penetration?",
+        "answers": [
+          "Hunter Strike",
+          "Endless Battle",
+          "War Axe",
+          "Blade of Despair"
+        ],
+        "correct": "Hunter Strike"
+      },
+      {
+        "question": "Which item provides bonus HP and cooldown reduction?",
+        "answers": [
+          "Oracle",
+          "Enchanted Talisman",
+          "Dominance Ice",
+          "Antique Cuirass"
+        ],
+        "correct": "Enchanted Talisman"
+      },
+      {
+        "question": "Which item grants bonus physical lifesteal?",
+        "answers": [
+          "Winter Truncheon",
+          "Blood Wings",
+          "Haas's Claws",
+          "Clock of Destiny"
+        ],
+        "correct": "Haas's Claws"
+      },
+      {
+        "question": "Which item provides bonus magic penetration?",
+        "answers": [
+          "Ice Queen Wand",
+          "Arcane Boots",
+          "Glowing Wand",
+          "Divine Glaive"
+        ],
+        "correct": "Divine Glaive"
+      },
+      {
+        "question": "Which item grants bonus physical attack and lifesteal?",
+        "answers": [
+          "Endless Battle",
+          "War Axe",
+          "Hunter Strike",
+          "Blade of Despair"
+        ],
+        "correct": "Endless Battle"
+      },
+      {
+        "question": "Which item provides bonus magic defense?",
+        "answers": [
+          "Oracle",
+          "Athena’s Shield",
+          "Rose Gold Meteor",
+          "Immortality"
+        ],
+        "correct": "Athena’s Shield"
+      },
+      {
+        "question": "Which item grants bonus physical attack and critical chance?",
+        "answers": [
+          "Demon Hunter Sword",
+          "Blade of Despair",
+          "Scarlet Phantom",
+          "Windtalker"
+        ],
+        "correct": "Scarlet Phantom"
+      },
+      {
+        "question": "Which item provides bonus physical attack and lifesteal?",
+        "answers": [
+          "Clock of Destiny",
+          "Winter Truncheon",
+          "Blood Wings",
+          "Haas's Claws"
+        ],
+        "correct": "Haas's Claws"
       }
     ]
   },
@@ -221,6 +371,61 @@
         "question": "Which hero was once a royal guard of the Moniyan Empire?",
         "answers": ["Tigreal", "Terizla", "Leomord", "Alucard"],
         "correct": "Leomord"
+      },
+      {
+        "question": "Who is the brother of Alucard?",
+        "answers": ["Dyrroth", "Zilong", "Leomord", "Aamon"],
+        "correct": "Aamon"
+      },
+      {
+        "question": "Which hero is known as the 'King of the Abyss'?",
+        "answers": ["Dyrroth", "Zilong", "Alucard", "Sun"],
+        "correct": "Dyrroth"
+      },
+      {
+        "question": "Which hero is known as the 'Queen of the Apocalypse'?",
+        "answers": ["Slena", "Alice", "Karina", "Lunox"],
+        "correct": "Alice"
+      },
+      {
+        "question": "Which hero is known as the 'Lightborn Paladin'?",
+        "answers": ["Leomord", "Silvanna", "Tigreal", "Alucard"],
+        "correct": "Tigreal"
+      },
+      {
+        "question": "Who is the ruler of the Abyss?",
+        "answers": ["Moskov", "Dyrroth", "Slena", "Alice"],
+        "correct": "Alice"
+      },
+      {
+        "question": "Who is the mentor of Gusion?",
+        "answers": ["Aamon", "Faramis", "Tigreal", "Kaja"],
+        "correct": "Aamon"
+      },
+      {
+        "question": "Which hero is the sworn enemy of the Moniyan Empire?",
+        "answers": ["Thamuz", "Argus", "Khufra", "Moskov"],
+        "correct": "Argus"
+      },
+      {
+        "question": "What is the name of the kingdom where Silvanna belongs?",
+        "answers": [
+          "Celestial Palace",
+          "Abyssal Kingdom",
+          "Moniyan Empire",
+          "Eruditio"
+        ],
+        "correct": "Moniyan Empire"
+      },
+      {
+        "question": "Which hero is known as the 'Fallen Angel'?",
+        "answers": ["Angela", "Slena", "Lunox", "Argus"],
+        "correct": "Argus"
+      },
+      {
+        "question": "Who is the protector of the Tree of Life?",
+        "answers": ["Estes", "Rafaela", "Lunox", "Harith"],
+        "correct": "Estes"
       }
     ]
   },
@@ -296,6 +501,61 @@
           "Support Emblem"
         ],
         "correct": "Mage Emblem"
+      },
+      {
+        "question": "What is the cooldown time for the Battle Spell 'Flicker'?",
+        "answers": ["180 seconds", "150 seconds", "90 seconds", "120 seconds"],
+        "correct": "120 seconds"
+      },
+      {
+        "question": "How many players are there in a standard Mobile Legends match?",
+        "answers": ["10", "8", "12", "6"],
+        "correct": "10"
+      },
+      {
+        "question": "What is the maximum number of emblems a player can equip in a match?",
+        "answers": ["1", "2", "3", "4"],
+        "correct": "1"
+      },
+      {
+        "question": "Which buff reduces cooldown and mana consumption?",
+        "answers": ["Red Buff", "Blue Buff", "Purple Buff", "Green Buff"],
+        "correct": "Blue Buff"
+      },
+      {
+        "question": "What is the duration of the Turtle buff?",
+        "answers": ["120 seconds", "60 seconds", "90 seconds", "150 seconds"],
+        "correct": "90 seconds"
+      },
+      {
+        "question": "How many lanes are there in Mobile Legends?",
+        "answers": ["5", "4", "3", "2"],
+        "correct": "3"
+      },
+      {
+        "question": "Which role is responsible for initiating team fights?",
+        "answers": ["Marksman", "Support", "Mage", "Tank"],
+        "correct": "Tank"
+      },
+      {
+        "question": "What is the respawn time for jungle monsters?",
+        "answers": ["45 seconds", "60 seconds", "75 seconds", "30 seconds"],
+        "correct": "45 seconds"
+      },
+      {
+        "question": "What happens when a hero is killed in Mobile Legends?",
+        "answers": [
+          "Respawns immediately",
+          "Respawns after a cooldown",
+          "Loses gold",
+          "Loses experience"
+        ],
+        "correct": "Respawns after a cooldown"
+      },
+      {
+        "question": "Which lane is typically played by the Fighter role?",
+        "answers": ["Jungle", "Mid Lane", "EXP Lane", "Roam"],
+        "correct": "EXP Lane"
       }
     ]
   }

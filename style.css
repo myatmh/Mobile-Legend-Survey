@@ -109,6 +109,22 @@ body {
 
 /* ******************** start Initial container ****************** */
 
+.h_container {
+  width: 100%;
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.highest_score {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+.top {
+  font-size: 1.4rem;
+  color: var(--span-color);
+}
+
 .choice1,
 .choice2 {
   text-align: center;
