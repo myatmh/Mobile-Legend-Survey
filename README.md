@@ -13,15 +13,22 @@ Answer *20 questions* for each *category* (included 4 categories)
 
 ## Features
 
-- Various Categories and can choose Quantities
-- Shuffle questions
-- Include Timer , Reset
-- Save Score in localstorage and Highlight Best Score
-- Some smooth transitions
-- responsive screen work
-- Choice , Play , Win .Have Fun.
+> Various Categories and can choose Quantities
+
+> Shuffle questions
+
+> Include Timer , Reset
+
+> Save Score in localstorage and Highlight Best Score
+
+> Some smooth transitions
+
+> responsive screen work
+
+> Choice , Play , Win .Have Fun.
 
 
 ## Screenshots
 
 ![Preview](https://github.com/myatmh/Mobile-Legend-Survey/blob/master/assets/mlquiz.png)
+
